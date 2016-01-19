@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8552C511C47875300E6137E /* MTMovieCortroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8552C501C47875300E6137E /* MTMovieCortroller.swift */; };
+		E8552C531C4793F500E6137E /* MTMovieEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8552C521C4793F500E6137E /* MTMovieEvent.swift */; };
+		E8A2DE311C46274000EFBD20 /* MTMoviePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2DE301C46274000EFBD20 /* MTMoviePlayer.swift */; };
+		E8CB46571C4D20EA00779042 /* MTLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CB46561C4D20EA00779042 /* MTLogEvent.swift */; };
 		E8E556FE1C45F2A4001FE413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E556FD1C45F2A4001FE413 /* AppDelegate.swift */; };
 		E8E557001C45F2A4001FE413 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E556FF1C45F2A4001FE413 /* ViewController.swift */; };
 		E8E557031C45F2A4001FE413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E557011C45F2A4001FE413 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8552C501C47875300E6137E /* MTMovieCortroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMovieCortroller.swift; sourceTree = "<group>"; };
+		E8552C521C4793F500E6137E /* MTMovieEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMovieEvent.swift; sourceTree = "<group>"; };
+		E8A2DE301C46274000EFBD20 /* MTMoviePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMoviePlayer.swift; sourceTree = "<group>"; };
+		E8CB46561C4D20EA00779042 /* MTLogEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTLogEvent.swift; path = ../../MTLogEvent/MTLogDemo/MTLogDemo/MTLogEvent.swift; sourceTree = "<group>"; };
 		E8E556FA1C45F2A4001FE413 /* MTMoviePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTMoviePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E556FD1C45F2A4001FE413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8E556FF1C45F2A4001FE413 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8A2DE2B1C46110400EFBD20 /* MTMoviePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E8A2DE301C46274000EFBD20 /* MTMoviePlayer.swift */,
+				E8552C501C47875300E6137E /* MTMovieCortroller.swift */,
+				E8552C521C4793F500E6137E /* MTMovieEvent.swift */,
+			);
+			name = MTMoviePlayer;
+			sourceTree = "<group>";
+		};
 		E8E556F11C45F2A4001FE413 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +115,10 @@
 		E8E556FC1C45F2A4001FE413 /* MTMoviePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E8CB46561C4D20EA00779042 /* MTLogEvent.swift */,
 				E8E556FD1C45F2A4001FE413 /* AppDelegate.swift */,
 				E8E556FF1C45F2A4001FE413 /* ViewController.swift */,
+				E8A2DE2B1C46110400EFBD20 /* MTMoviePlayer */,
 				E8E557011C45F2A4001FE413 /* Main.storyboard */,
 				E8E557041C45F2A5001FE413 /* Assets.xcassets */,
 				E8E557061C45F2A5001FE413 /* LaunchScreen.storyboard */,
@@ -256,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8552C511C47875300E6137E /* MTMovieCortroller.swift in Sources */,
+				E8A2DE311C46274000EFBD20 /* MTMoviePlayer.swift in Sources */,
 				E8E557001C45F2A4001FE413 /* ViewController.swift in Sources */,
 				E8E556FE1C45F2A4001FE413 /* AppDelegate.swift in Sources */,
+				E8CB46571C4D20EA00779042 /* MTLogEvent.swift in Sources */,
+				E8552C531C4793F500E6137E /* MTMovieEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +506,7 @@
 				E8E557241C45F2A5001FE413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8E557251C45F2A5001FE413 /* Build configuration list for PBXNativeTarget "MTMoviePlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				E8E557271C45F2A5001FE413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8E557281C45F2A5001FE413 /* Build configuration list for PBXNativeTarget "MTMoviePlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				E8E5572A1C45F2A5001FE413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
