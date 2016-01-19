@@ -1,8 +1,12 @@
-# MTMovieControl
+MTMovieControl
+=======
 
 A video played base AVPlayer
 
-#####Usage
+Usage
+------
+
+####Initial
 
 initial controller 
 
@@ -12,17 +16,18 @@ initial player layer
 
 ```let playLayer = MTMoviePlayer(playerController: player, frame:frame)```
 
-#####control event
+####play movie
 
-#####play movie
 It can play local file and streaming file
 ```player.play(url: urlString)```
 
-#####add observer
-There are two way to add an observer. 
-1. clousure
-    ``` self.player.eventHandle {[unowned self] (events) -> Void in
-            switch events {
+#### Add observer
+
+There are two way to add an observer.   
+
+##### clousure  
+    self.player.eventHandle {[unowned self] (events) -> Void in
+        switch events {
             case .ReadyToPlay(let totolTime):
                 print("ready to play \(totolTime)")
             /*
@@ -47,12 +52,17 @@ There are two way to add an observer.
             default:
                 print("default")
             }
-        }```
-2. Protocol delegate 
+        }
 
-. set delegate
+
+##### Protocol delegate   
+
+set delegate  
+
     player.delegate = self
+
 . add delegate method
+
     func event(events: Event) {
         switch events {
             case .ReadyToPlay(let totolTime):
